@@ -8,7 +8,7 @@
 def categorize_age(age):
     ageCategory = "TBD"
 #check which category the user's input falls into and assign a new value to ageCategory accordingly
-    if age <= 1 and age >= 0:
+    if (age <= 1 and age > 0):
         ageCategory = "infant"
     elif age > 1 and age < 13:
         ageCategory = "child"

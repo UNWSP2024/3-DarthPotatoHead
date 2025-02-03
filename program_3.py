@@ -12,9 +12,18 @@
 def weight_conversion(weight):
     # Calculate the shipping charge.
     shippingCost = 0.0
-    ######################
-    # WRITE YOUR CODE HERE
-    ######################
+#check which category the user's input falls into and assign the correct dollar amount to shippingCost
+    if weight <= 2 and weight > 0:
+        shippingCost = 1.5
+    elif weight > 2 and weight < 6:
+        shippingCost = 3
+    elif weight >= 6 and weight < 10:
+        shippingCost = 4
+    elif weight >= 10:
+        shippingCost = 4.75
+    # if all conditions fail the user's input was invalid
+    else:
+        shippingCost = "invalid weight"
     
     return shippingCost
 
@@ -29,4 +38,4 @@ if __name__ == '__main__':
     weight = float(input('Enter the weight of the package: '))
     # Display the shipping charge.
     shippingCost = weight_conversion(weight)
-    print ('Shipping charge: $', format(shippingCost, '.2f'))
+    print ('Shipping charge: $' + format(shippingCost, '.2f'))
