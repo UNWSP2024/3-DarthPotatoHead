@@ -7,10 +7,18 @@
 
 def categorize_age(age):
     ageCategory = "TBD"
-    ######################
-    # WRITE YOUR CODE HERE
-    ######################
-
+#check which category the user's input falls into and assign a new value to ageCategory accordingly
+    if age <= 1 and age >= 0:
+        ageCategory = "infant"
+    elif age > 1 and age < 13:
+        ageCategory = "child"
+    elif age >= 13 and age < 20:
+        ageCategory = "teenager"
+    elif age >= 20:
+        ageCategory = "adult"
+#if all conditions fail the user's input was invalid
+    else:
+        ageCategory = "invalid age number"
 
     return ageCategory
 
