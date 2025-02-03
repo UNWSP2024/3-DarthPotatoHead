@@ -23,7 +23,7 @@ def weight_conversion(weight):
         shippingCost = 4.75
     # if all conditions fail the user's input was invalid
     else:
-        shippingCost = "invalid weight"
+        print("invalid weight")
     
     return shippingCost
 
