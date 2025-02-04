@@ -1,3 +1,8 @@
+#Program Written By: Ainsley Bellamy
+#Date Written: 01/27/2025
+#Program Title: Display_ShippingCost
+
+
 # Programming Excersize 3-13
 
 # The Fast Freight Shipping Company charges the following rates:

@@ -1,3 +1,8 @@
+#Program Written By: Ainsley Bellamy
+#Date Written: 02/3/2025
+#Program Title: Categorize_Age
+
+
 # Write a program that asks the user to enter a person's age.  The program should display a message indicating whether the person is an infant, a child, a teenager, or an adult.  Following are the guidelines:
 
 # If the person is 1 year old or less, it should display "infant" (without quotes).
